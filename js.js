@@ -83,6 +83,9 @@ window.onload = function() {
   document.getElementById('speak').addEventListener('click', () => {
     speak(document.getElementById('result').value)
   });
+
+  //preload
+  speechSynthesis.speak(new SpeechSynthesisUtterance(''));
 };
 
 
