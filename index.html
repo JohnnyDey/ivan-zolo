@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Язык Ивана Золо</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  Hey, world!
+  <div class="container p-4">
+    <div class="row justify-content-md-center gy-3 gx-0">
+      <img src="img.png" alt="Гений" style="max-width:300px;" class="border rounded">
+      <label for="phrase" class="form-label">Введи слово или фразу на английском языке</label>
+      <textarea id="phrase" name="phrase" class="form-control" placeholder="Например, HUSKAR"></textarea>
+      <button id="translate" class="btn btn-primary">Перевести на язык Ивана Золо</button>
+      <textarea class="form-control" id="result" placeholder="Здесь будет результат" disabled></textarea>
+      <button id="speak" class="btn btn-primary" disabled>Послушать произношение</button>
+      <p style="font-size:12px">*данный переводчик не гарантирует 100% попадаение, т.к. в язые Ивана Золо присутствует доля рандома
+        и некоторые буквы могут с некоторой вероятносью читаться как абсолютно ЛЮБАЯ буква в зависимости
+        от настрояния самого Ивана.</p>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
 </body>
 </html>
